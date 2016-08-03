@@ -7,93 +7,101 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04E64C7FB1A07849C9C3A28FEFD81CC1 /* BMPlayer_mask_image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 71A1F57BB188EB5026EB0845F251E263 /* BMPlayer_mask_image@2x.png */; };
-		0A91C957C66974094A48E5B41F78F627 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A41C04F9FB06B54E2A413E29A588B49 /* UIKit.framework */; };
-		0BDE99B3F62C91630DE02B9DE7A6A3BD /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C12E7B87F742CE0B41CDD78A4D8C61 /* Debugging.swift */; };
-		0DEABF3416AB56D44981F64D1D55CB6D /* BMPlayer_mask_image@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9BDC8060569AF09012D5CDA183A2EC4 /* BMPlayer_mask_image@3x.png */; };
-		1C949B1B2111855808958FBAAE2DB401 /* BMPlayer_replay@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B058C8BA0DD8D7CFCCD82F12D9EE75AB /* BMPlayer_replay@3x.png */; };
-		209AD5F50D52B109A3A5BC2FB5B9E03A /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6D796933D37585D345CAA5AE4286C9 /* ConstraintMakerFinalizable.swift */; };
-		2246F46504B7507D0FF1A344F232AEF6 /* BMPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FCD6F5219C87644740B4658B491D3F57 /* BMPlayer.bundle */; };
-		224AC51D178216439463D8892E405F8C /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B0371CF5D474C4F8B4EA95484EC83D /* ConstraintMultiplierTarget.swift */; };
-		23E94F9E23ABD2641AF457D2120A9E7A /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3C6B6F292FA4B57D7491A9837ACD6D /* ConstraintView+Extensions.swift */; };
-		2E0C549D3F1BC915DDC043F9D71AB9E9 /* BMPlayer_slider_thumb@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A59B055A10E532A0EDD9AE5A64158DF /* BMPlayer_slider_thumb@3x.png */; };
-		318563F839B8807FF9508A54BDDE72E4 /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5812104109D5848C2C50B90F4CC47507 /* ConstraintInsets.swift */; };
-		32FD9D7244E2B75B0B4499D7C4F825BA /* BMPlayer_slider_thumb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 779B8CCF5D06C633BCC39CEC200A2362 /* BMPlayer_slider_thumb@2x.png */; };
-		3E2F9DCE12A981D2DBF928B871B0BD06 /* BMPlayer_seek_to_image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7A232F49F8AB51328F8C2CE86F1CDFC /* BMPlayer_seek_to_image@2x.png */; };
-		41D13A9B4F64C6619ABBE9BBA3DF8A28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5422916563B77A748D40B022EAE1747C /* Foundation.framework */; };
+		001B7368CF22EB69977F5965F0C5FFDD /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1FFAE5844E6036919599593C4AF897 /* SnapKit-dummy.m */; };
+		039FD224E76B74390A6FBFFBB9252C3F /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B44129C3E33B345471972A96E7CE28C1 /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04C1AE8CB32BBC39843757F8800D470A /* BMPlayer_portialscreen@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6808044164D6DA91DEBE9C3B7610A73D /* BMPlayer_portialscreen@3x.png */; };
+		06A539016122FBAA0E2DE5D5ACB29982 /* BMPlayer_play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED3F77B7CC2272DAB291F497DAC5E77D /* BMPlayer_play@2x.png */; };
+		06E70C4181210E36523F06F83244F511 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A55963EB2AE3EBD5B975E7FBCE5574D /* Foundation.framework */; };
+		07BF8A3F5C96C048CCA095DD91F572F7 /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6D796933D37585D345CAA5AE4286C9 /* ConstraintMakerFinalizable.swift */; };
+		1623EFFD820618114965C1351E891B94 /* ConstraintViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B09B6F90CF222D98D35F17AD50465B5 /* ConstraintViewController+Extensions.swift */; };
+		184E318A31CF1687A99EA89A6895CB54 /* BMPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7AD8B9EFB9161B794DDF42E88ECBD1 /* BMPlayerManager.swift */; };
+		1B051A54171CB2E2B1812DBEFEE9B636 /* BMPlayer_slider_thumb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 779B8CCF5D06C633BCC39CEC200A2362 /* BMPlayer_slider_thumb@2x.png */; };
+		1EF34F8F8D81AFFD636EA04BD62CF50F /* BMPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3B6BB1B9DE0213443B6F373B91C29A /* BMPlayer.swift */; };
+		1F39452673CE904D13BB67440F347D73 /* BMPlayer_seek_to_image@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E0A89A26E438971E3CE70268B9A292AE /* BMPlayer_seek_to_image@3x.png */; };
+		22B32C1FCB205D331B4D93C6DE1978A7 /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B0371CF5D474C4F8B4EA95484EC83D /* ConstraintMultiplierTarget.swift */; };
+		27220FF01AAA36461EBC58389F684BCB /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54929DAC44F1DC7B3E3A4FECA180F356 /* ConstraintView.swift */; };
+		278E60F4FB9B0239D0D498157C654740 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B79DB27910AABF618D96204186E6D0 /* LayoutConstraint.swift */; };
+		34002CD6D070A5CF5024A2F2FD059A17 /* ConstraintViewControllerDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = E964421CDB064373F4BD13396CB6F879 /* ConstraintViewControllerDSL.swift */; };
+		3ADB4B94FEA6FA2C79C94CA4862433A6 /* BMPlayer_portialscreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA3BD94859C28D12F7FC60D016FC538 /* BMPlayer_portialscreen@2x.png */; };
+		3C2B07824A6CD58C8CE05A7C2DD66C50 /* BMPlayer_play@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47FD4FAA8C2EC498208196000F7FF007 /* BMPlayer_play@3x.png */; };
+		45FAF53DC51D9C290059E3209BBADC8C /* BMPlayer_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A2D67C8E0DB6111058FE2F937BA6D9 /* BMPlayer_back@2x.png */; };
+		481E916D4990B7DD7018F9FE19B55C38 /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD229D8836DA7B3BD2E2489CEBB0D36C /* ConstraintRelatableTarget.swift */; };
 		4D7CDC7F5CF01A0FE4055CC9C19F36D7 /* Pods-BMPlayer_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C3BB95690BF8716F63DBD50C7CE3F016 /* Pods-BMPlayer_Example-dummy.m */; };
-		533B2D15FE6A33F346C0F5410BE7C656 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5422916563B77A748D40B022EAE1747C /* Foundation.framework */; };
-		5D1FC7C7BEC96F915B20C5478AB8090B /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019DEC5A3675096CD6F30B5C83E3D164 /* ConstraintItem.swift */; };
-		608C526A49F9C5F25965F045E832A21E /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = E986CD8A0B281F144D0921D2487B862B /* ConstraintDescription.swift */; };
-		6142753E2F7576FEECFE4E28701DC4D9 /* BMPlayer_play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED3F77B7CC2272DAB291F497DAC5E77D /* BMPlayer_play@2x.png */; };
-		64772822B6440DF9A6A78D0E95FB1DBB /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EA0688919812D7DCACFF40F23145FE /* ConstraintConfig.swift */; };
-		6EB33C7CBEAD7EDFA5EDC9FEB56AC22D /* BMPlayer_portialscreen@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6808044164D6DA91DEBE9C3B7610A73D /* BMPlayer_portialscreen@3x.png */; };
-		6FC8887E41BE06C859C9A7B0310FDFF2 /* BMPlayer_pause@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 956169DC5245293169CCC0088EC83B98 /* BMPlayer_pause@3x.png */; };
-		706B59AA052DB786171409532F32C59C /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B6822DDBA8212964C1F5C3A93FE136 /* ConstraintPriorityTarget.swift */; };
-		70C90FC662357F18848477DAF23BCB91 /* BMPlayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D7A2F08683789D6F24565CD3CBCB62 /* BMPlayer-dummy.m */; };
-		71F8510B559B6A4F69707E36244B984E /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E7A730E9E8A35FEE28E8AA573C1DA6 /* Constraint.swift */; };
-		786A1B62886144DE015BD3D26671832C /* BMPlayer_play@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47FD4FAA8C2EC498208196000F7FF007 /* BMPlayer_play@3x.png */; };
-		787A53F71C08242BEF53756E8041E9A0 /* BMPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3B6BB1B9DE0213443B6F373B91C29A /* BMPlayer.swift */; };
-		7BDB0827516D4829C2F0CA76B1109F9A /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5816CED0DD61638E24C9A5013C321D24 /* ConstraintMakerRelatable.swift */; };
-		7C14ED8E1466D4EBF8D80F1B4FF29A5F /* BMPlayerControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F281D8B01F5FA37846431D69C0ABAEA1 /* BMPlayerControlView.swift */; };
-		7EB1EECDBF6069A6EED3F6CFB5B0D495 /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264EF9892072CC644150527ECCA5A92B /* ConstraintConstantTarget.swift */; };
-		7EFE4AD01BC7EE1D6BC0173A6D30DAAB /* BMPlayer_back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FB21CCD5CAF2B32342591C37B980926 /* BMPlayer_back@3x.png */; };
-		813D8F3E1BC840D7EE07426B26DE8E46 /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9253FDEE575CEC0FB119A42AABF8A3E8 /* ConstraintMakerPriortizable.swift */; };
-		82BEBA76FC963B741C2B93118B1624AA /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15245F91AF1D3D619ABD98D5369266CD /* ConstraintRelation.swift */; };
-		834BD85B7A612F4327A36F913CD05FAD /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54929DAC44F1DC7B3E3A4FECA180F356 /* ConstraintView.swift */; };
-		84000C9398F13B27746339FED2368A93 /* BMPlayer_seek_to_image@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E0A89A26E438971E3CE70268B9A292AE /* BMPlayer_seek_to_image@3x.png */; };
-		87194C2CB7E9F97ACC39FCEBB793BFE3 /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BC7E97AF8512665738E7BF8BBF1917 /* ConstraintMakerEditable.swift */; };
-		8930FFC3386A8D16427B751525328E5B /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD229D8836DA7B3BD2E2489CEBB0D36C /* ConstraintRelatableTarget.swift */; };
-		89CF645CE380224372ADD61840906B83 /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFA62353EBA854EAC5CEA78EEAC0B56 /* ConstraintViewDSL.swift */; };
-		9079FFB8EF66D5C4D94010E007829345 /* BMPlayerLayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8AC6B1B2501DEF753B95EED47BA9D2 /* BMPlayerLayerView.swift */; };
-		9192FBF45C922A64DE1FA82416F12F24 /* BMPlayer_fullscreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3289CC0BC344E27AE7883F91F2FE7133 /* BMPlayer_fullscreen@2x.png */; };
-		936FDCCB57D08F901918AB2EB3176D40 /* BMPlayer_pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61BBB48717225907F9100CDB29CD17C2 /* BMPlayer_pause@2x.png */; };
-		970D97BD72BBECAE53498517358D1E44 /* BMPlayer_fullscreen@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A4CC9FB3B139CA1315D3B31B975F30D2 /* BMPlayer_fullscreen@3x.png */; };
-		9D1FFD654ED1E624CE99EE139509E188 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5422916563B77A748D40B022EAE1747C /* Foundation.framework */; };
-		9E5128D2ECFC6DCBF46C8F684511043F /* BMPlayer_replay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F3111E5DD341C11D3F9255D2A1A1CD9 /* BMPlayer_replay@2x.png */; };
-		A678992DD239B7081CEBE7288DF606F9 /* BMPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7AD8B9EFB9161B794DDF42E88ECBD1 /* BMPlayerManager.swift */; };
-		A82ED7984CD97D6B947C9B2160921591 /* ConstraintViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B09B6F90CF222D98D35F17AD50465B5 /* ConstraintViewController+Extensions.swift */; };
-		A83F48CBA2DCC6ED779663A3B6C210B4 /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6172A74BEA4C6CB66A7910099EC7BF6 /* ConstraintLayoutSupport.swift */; };
-		B1E019A861CBA5AC26D902BAF975CA81 /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CC54BAC392F60CD7EF8C80FB9811C1 /* ConstraintInsetTarget.swift */; };
-		B22E9BDDAB1BCB1EBDA8DF5DE9FDA33D /* BMPlayerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7ACC51C299B890B3B4CE6FC33A1004 /* BMPlayerItem.swift */; };
-		B544D4F0BC16F608F8A336A48C7CB1F7 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98102E6294B8C2D7F5A9B972A41D8C70 /* ConstraintMaker.swift */; };
-		B91F0BE7A5ECCEBF5C289286D2F8665F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ADFC5A4B2BBCFD9A27B7A059658E773 /* AVFoundation.framework */; };
-		BB12C70CAA768E7C7640FB552C79A0D5 /* ConstraintViewControllerDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = E964421CDB064373F4BD13396CB6F879 /* ConstraintViewControllerDSL.swift */; };
-		BC1885F4A24F6CB9370ADAF8DAF3A8C0 /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857453D62C9FF4E12E70D703D808A8FC /* ConstraintMakerExtendable.swift */; };
-		C2BDA0FD5AE8C860F5683CC86CA5A6E2 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7195CF3F4CE19352A05EC9F3D6524AA2 /* ConstraintAttributes.swift */; };
-		C313701A7663DA15C62657D2048179F0 /* BMPlayer_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A2D67C8E0DB6111058FE2F937BA6D9 /* BMPlayer_back@2x.png */; };
-		C3D1AA7F8CEEC95C890E5A2D7A48AEA9 /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1FFAE5844E6036919599593C4AF897 /* SnapKit-dummy.m */; };
-		C67C1E35AC1D0FFEB7E1C326D566B249 /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E4D8B06FB569B46D0EFC31111AE44 /* ConstraintOffsetTarget.swift */; };
-		C68FF9E8E1019561B2EC4C99D6F1A774 /* BMPlayerProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9210EDCF143B2281FAE1816F68A381 /* BMPlayerProtocols.swift */; };
-		D199DAAF7FDC0A39C8BBCEF89FE445BE /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B44129C3E33B345471972A96E7CE28C1 /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D343AC80CECC6E64A318EED44044FC04 /* BMPlayer_portialscreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA3BD94859C28D12F7FC60D016FC538 /* BMPlayer_portialscreen@2x.png */; };
-		E57D175DF4E9CA380D525CCDF36CD07B /* BMPlayerClearityChooseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F50FF3F7721A2038E788229E73C6CE /* BMPlayerClearityChooseButton.swift */; };
-		EAE1DA27E16DB147C230F5A9FB98F4C8 /* ConstraintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05860028D3067C7EE13DF2C3D175A897 /* ConstraintViewController.swift */; };
+		4FACB0662ACC27D56E47BA5166B5872C /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5816CED0DD61638E24C9A5013C321D24 /* ConstraintMakerRelatable.swift */; };
+		4FE681D8CDC8DC1A7E9EAA83BCB9A0F7 /* BMPlayer_replay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F3111E5DD341C11D3F9255D2A1A1CD9 /* BMPlayer_replay@2x.png */; };
+		51B8E5AA9F9B81F3117A364E408DBE47 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019DEC5A3675096CD6F30B5C83E3D164 /* ConstraintItem.swift */; };
+		530E65D9993DA4DA1DB39C132AD49714 /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857453D62C9FF4E12E70D703D808A8FC /* ConstraintMakerExtendable.swift */; };
+		533B2D15FE6A33F346C0F5410BE7C656 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A55963EB2AE3EBD5B975E7FBCE5574D /* Foundation.framework */; };
+		5AB9A8C4C8A40D92C89D99484295575D /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9253FDEE575CEC0FB119A42AABF8A3E8 /* ConstraintMakerPriortizable.swift */; };
+		5F60FA6CF13C4C109B0CC5FB2FA98BB6 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15245F91AF1D3D619ABD98D5369266CD /* ConstraintRelation.swift */; };
+		6E94CA8A93774A3C044B3A4C10E11FB9 /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EA0688919812D7DCACFF40F23145FE /* ConstraintConfig.swift */; };
+		77D6F1CDF191DDEA233D74081D07CDD1 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = E986CD8A0B281F144D0921D2487B862B /* ConstraintDescription.swift */; };
+		7DDAD19C4FD4002EE4F290FEFB355692 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7195CF3F4CE19352A05EC9F3D6524AA2 /* ConstraintAttributes.swift */; };
+		7F71F13ED91B8A9A745251C5AB3C5E52 /* BMPlayer_seek_to_image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7A232F49F8AB51328F8C2CE86F1CDFC /* BMPlayer_seek_to_image@2x.png */; };
+		7FA1C107EF55D30DE4FC585FC389CA74 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E7A730E9E8A35FEE28E8AA573C1DA6 /* Constraint.swift */; };
+		800E06F5DC2DEB81F6C9F86240E7E04D /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CC54BAC392F60CD7EF8C80FB9811C1 /* ConstraintInsetTarget.swift */; };
+		836041B91CEE4F935A24E03157CF149C /* BMPlayer_pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61BBB48717225907F9100CDB29CD17C2 /* BMPlayer_pause@2x.png */; };
+		867C2F3FDBF0717862E9159B8C0DB7BF /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFA62353EBA854EAC5CEA78EEAC0B56 /* ConstraintViewDSL.swift */; };
+		86F5A41F10CC9DF43ACE8593BBDFE9E7 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 191AF6D3DDC36230E7F6E1EF38712D35 /* SnapKit.framework */; };
+		8A1CC840E307FB5B8621E1D0CEA1F63A /* BMPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FCD6F5219C87644740B4658B491D3F57 /* BMPlayer.bundle */; };
+		8CCDB0274ED5C0E17EB0AA49D437276F /* BMPlayer_replay@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B058C8BA0DD8D7CFCCD82F12D9EE75AB /* BMPlayer_replay@3x.png */; };
+		8E4355A4C511F6C0D266F13187451E1A /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BC7E97AF8512665738E7BF8BBF1917 /* ConstraintMakerEditable.swift */; };
+		8F099C775FED240D8A66C678BC38ADC8 /* BMPlayerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7ACC51C299B890B3B4CE6FC33A1004 /* BMPlayerItem.swift */; };
+		94E1946C564B76714E29085FEADEF68E /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6172A74BEA4C6CB66A7910099EC7BF6 /* ConstraintLayoutSupport.swift */; };
+		96015408DE65F60D9F6EC8C07C097D6D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD95DC0B1BA6C2506F1031AD82920B72 /* UIKit.framework */; };
+		9FD514B793F0D864395CB9D90E8CBF41 /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264EF9892072CC644150527ECCA5A92B /* ConstraintConstantTarget.swift */; };
+		A450AECF16FC01166BDAE1CEF3820E05 /* BMPlayerControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F281D8B01F5FA37846431D69C0ABAEA1 /* BMPlayerControlView.swift */; };
+		A69C19901A9C5C27F045AC4869EB369F /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98102E6294B8C2D7F5A9B972A41D8C70 /* ConstraintMaker.swift */; };
+		B4060E7F5AD9ED38134F87349EC3A1A0 /* BMPlayer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D8F72AC8CB597A0104059F8BBC0C290 /* BMPlayer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B82677336502C0D5AA87331213C794B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A55963EB2AE3EBD5B975E7FBCE5574D /* Foundation.framework */; };
+		C0D2326D6E0E2DAEB409E97869EC2530 /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E4D8B06FB569B46D0EFC31111AE44 /* ConstraintOffsetTarget.swift */; };
+		C4156EAADA8ED729C4339342C9C767BC /* BMPlayer_fullscreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3289CC0BC344E27AE7883F91F2FE7133 /* BMPlayer_fullscreen@2x.png */; };
+		C62173935DC8AA06E4C131AE564F2B89 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1216B4617AD62809B2577F44F92114 /* AVFoundation.framework */; };
+		D16361B819F8EB8D9A52FD8B6E6594C9 /* BMPlayerLayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8AC6B1B2501DEF753B95EED47BA9D2 /* BMPlayerLayerView.swift */; };
+		D256FA04F35EED63D41BA536599984B4 /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5812104109D5848C2C50B90F4CC47507 /* ConstraintInsets.swift */; };
+		D2B5B3324344CCA49E48BA69BCD8C41B /* BMPlayer_fullscreen@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A4CC9FB3B139CA1315D3B31B975F30D2 /* BMPlayer_fullscreen@3x.png */; };
+		D54AB91873D24CBFA9E1F32072DEF0EA /* BMPlayer_pause@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 956169DC5245293169CCC0088EC83B98 /* BMPlayer_pause@3x.png */; };
+		E05A7D11F14EFD39A35BC3E678DE7BFA /* BMPlayerProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9210EDCF143B2281FAE1816F68A381 /* BMPlayerProtocols.swift */; };
+		E23B5BBC74F188AC179D746E04ECBCF4 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C12E7B87F742CE0B41CDD78A4D8C61 /* Debugging.swift */; };
+		E85E17968BB2F90C1AF2D8F6805C81E7 /* BMPlayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D7A2F08683789D6F24565CD3CBCB62 /* BMPlayer-dummy.m */; };
+		EA8EAE137D26C2479155A6F17BADAF2A /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3C6B6F292FA4B57D7491A9837ACD6D /* ConstraintView+Extensions.swift */; };
 		EAE76CD403BD9DCA0096C08A859CDAA5 /* Pods-BMPlayer_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 251CCB4F4FD00AE4B09A6F555974F932 /* Pods-BMPlayer_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F9144FD0F166DC4A55DCAE463DAF0008 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B79DB27910AABF618D96204186E6D0 /* LayoutConstraint.swift */; };
-		FB682625966580678DC553D0BEABE7DE /* BMPlayer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D8F72AC8CB597A0104059F8BBC0C290 /* BMPlayer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC31DADAAA7BA77D63510BC52B8F3739 /* BMPlayer_slider_thumb@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A59B055A10E532A0EDD9AE5A64158DF /* BMPlayer_slider_thumb@3x.png */; };
+		ECC7DC3458F408E204F9DC9EC8F96031 /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B6822DDBA8212964C1F5C3A93FE136 /* ConstraintPriorityTarget.swift */; };
+		EFAC09A46F9DB06F2E6C0451A31597F1 /* BMPlayer_mask_image@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9BDC8060569AF09012D5CDA183A2EC4 /* BMPlayer_mask_image@3x.png */; };
+		F3988DB8C2C48FB2804D8B2ED2781D37 /* BMPlayer_mask_image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 71A1F57BB188EB5026EB0845F251E263 /* BMPlayer_mask_image@2x.png */; };
+		F543B57FDF44C976085719C73EC5CB45 /* ConstraintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05860028D3067C7EE13DF2C3D175A897 /* ConstraintViewController.swift */; };
+		F779A2392AEFEB1E805BCD43965CCAE1 /* BMPlayer_back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FB21CCD5CAF2B32342591C37B980926 /* BMPlayer_back@3x.png */; };
+		F8EDB736C591CBF38C0EEDD52D2FD0D3 /* BMPlayerClearityChooseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F50FF3F7721A2038E788229E73C6CE /* BMPlayerClearityChooseButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		15F17AADDD7C6C08638FC431244A3442 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02D86ABF750F29582EDE86EB86F745C7;
+			remoteInfo = SnapKit;
+		};
 		867DDB9FB79D8632A3D5D5DD9AB3A494 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6ADFB4A1DE088AB12790CD71AE7E6DF4;
+			remoteGlobalIDString = 5B69FE7A1C6AF2AF081C41813B79D40F;
 			remoteInfo = BMPlayer;
 		};
 		94B6DD30897FC2F8CFFD537848215310 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 16C19DF11758D78959DA9FA9BB7D996C;
+			remoteGlobalIDString = 02D86ABF750F29582EDE86EB86F745C7;
 			remoteInfo = SnapKit;
 		};
-		C58DA09B3CF6905E239DD97D0BC156F1 /* PBXContainerItemProxy */ = {
+		AC04BF2E839E3295782553106D1C49B6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2076B31352333DB08DA744BD7A016B70;
+			remoteGlobalIDString = FA7AF2F5285FA7680124538E836499F8;
 			remoteInfo = "BMPlayer-BMPlayer";
 		};
 /* End PBXContainerItemProxy section */
@@ -107,6 +115,7 @@
 		0A59B055A10E532A0EDD9AE5A64158DF /* BMPlayer_slider_thumb@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "BMPlayer_slider_thumb@3x.png"; sourceTree = "<group>"; };
 		14B0371CF5D474C4F8B4EA95484EC83D /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
 		15245F91AF1D3D619ABD98D5369266CD /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
+		191AF6D3DDC36230E7F6E1EF38712D35 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A3B6BB1B9DE0213443B6F373B91C29A /* BMPlayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMPlayer.swift; sourceTree = "<group>"; };
 		1B09B6F90CF222D98D35F17AD50465B5 /* ConstraintViewController+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintViewController+Extensions.swift"; path = "Source/ConstraintViewController+Extensions.swift"; sourceTree = "<group>"; };
 		1D8F72AC8CB597A0104059F8BBC0C290 /* BMPlayer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BMPlayer-umbrella.h"; sourceTree = "<group>"; };
@@ -118,14 +127,12 @@
 		3289CC0BC344E27AE7883F91F2FE7133 /* BMPlayer_fullscreen@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "BMPlayer_fullscreen@2x.png"; sourceTree = "<group>"; };
 		32CC54BAC392F60CD7EF8C80FB9811C1 /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
 		38051AB673249585A49C14D27A470117 /* Pods-BMPlayer_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BMPlayer_Example-frameworks.sh"; sourceTree = "<group>"; };
-		3A41C04F9FB06B54E2A413E29A588B49 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		3BEF50C047325FAF1B410630DDED4E82 /* Pods-BMPlayer_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BMPlayer_Example-resources.sh"; sourceTree = "<group>"; };
 		3D1FFAE5844E6036919599593C4AF897 /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
 		3E6D796933D37585D345CAA5AE4286C9 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
 		3EA26763402D3A7C9A96258F97131C5B /* Pods-BMPlayer_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BMPlayer_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		40E7A730E9E8A35FEE28E8AA573C1DA6 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
 		47FD4FAA8C2EC498208196000F7FF007 /* BMPlayer_play@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "BMPlayer_play@3x.png"; sourceTree = "<group>"; };
-		5422916563B77A748D40B022EAE1747C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		54929DAC44F1DC7B3E3A4FECA180F356 /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
 		5812104109D5848C2C50B90F4CC47507 /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
 		5816CED0DD61638E24C9A5013C321D24 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
@@ -138,6 +145,7 @@
 		64BD84B721AEF6218333051539F8A9E0 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66B3FD11CD4ED5124D563AD0CB1EA9FD /* BMPlayer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BMPlayer.modulemap; sourceTree = "<group>"; };
 		6808044164D6DA91DEBE9C3B7610A73D /* BMPlayer_portialscreen@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "BMPlayer_portialscreen@3x.png"; sourceTree = "<group>"; };
+		6A55963EB2AE3EBD5B975E7FBCE5574D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6E7ACC51C299B890B3B4CE6FC33A1004 /* BMPlayerItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BMPlayerItem.swift; sourceTree = "<group>"; };
 		7195CF3F4CE19352A05EC9F3D6524AA2 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
 		71A1F57BB188EB5026EB0845F251E263 /* BMPlayer_mask_image@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "BMPlayer_mask_image@2x.png"; sourceTree = "<group>"; };
@@ -151,7 +159,6 @@
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		956169DC5245293169CCC0088EC83B98 /* BMPlayer_pause@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "BMPlayer_pause@3x.png"; sourceTree = "<group>"; };
 		98102E6294B8C2D7F5A9B972A41D8C70 /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
-		9ADFC5A4B2BBCFD9A27B7A059658E773 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		9B98471624D2D63A7A45BAB1EF7EB5C6 /* BMPlayer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BMPlayer-prefix.pch"; sourceTree = "<group>"; };
 		9BCA3BCC636A9B5C7DC115987E86EB86 /* Pods-BMPlayer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BMPlayer_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		9FBF5B86D635FC8B5EF855312215101F /* Pods-BMPlayer_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BMPlayer_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -159,6 +166,7 @@
 		A8041B3C49AC6DCE06063A900C919E86 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SnapKit.modulemap; sourceTree = "<group>"; };
 		A8C12E7B87F742CE0B41CDD78A4D8C61 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
 		AD3ACF96FE903923B211A379B442AC03 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD95DC0B1BA6C2506F1031AD82920B72 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		B058C8BA0DD8D7CFCCD82F12D9EE75AB /* BMPlayer_replay@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "BMPlayer_replay@3x.png"; sourceTree = "<group>"; };
 		B37F720734FD1721212DA3BAE4BC14AC /* Pods_BMPlayer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BMPlayer_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B41071F0B72BA7429A4380C68085D55E /* BMPlayer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BMPlayer.xcconfig; sourceTree = "<group>"; };
@@ -171,6 +179,7 @@
 		C3BB95690BF8716F63DBD50C7CE3F016 /* Pods-BMPlayer_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BMPlayer_Example-dummy.m"; sourceTree = "<group>"; };
 		C6172A74BEA4C6CB66A7910099EC7BF6 /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
 		C988C4D236B810884A6DD12888ADE1CE /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
+		CC1216B4617AD62809B2577F44F92114 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		D9BDC8060569AF09012D5CDA183A2EC4 /* BMPlayer_mask_image@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "BMPlayer_mask_image@3x.png"; sourceTree = "<group>"; };
 		E0A89A26E438971E3CE70268B9A292AE /* BMPlayer_seek_to_image@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "BMPlayer_seek_to_image@3x.png"; sourceTree = "<group>"; };
 		E46F246B4B757A474D4F92637D1CEC11 /* Pods-BMPlayer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BMPlayer_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -186,10 +195,22 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		359711971F8DA6511610F51AFBA221DB /* Frameworks */ = {
+		361FF3BC6166C8488C182DD962E8CC1B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06E70C4181210E36523F06F83244F511 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61281564896ECC431D4783144BA87769 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C62173935DC8AA06E4C131AE564F2B89 /* AVFoundation.framework in Frameworks */,
+				B82677336502C0D5AA87331213C794B6 /* Foundation.framework in Frameworks */,
+				86F5A41F10CC9DF43ACE8593BBDFE9E7 /* SnapKit.framework in Frameworks */,
+				96015408DE65F60D9F6EC8C07C097D6D /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,31 +222,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C2ACD7F8370545FCA3B7AD721AA4A82C /* Frameworks */ = {
+		9F14F853A94F9D35CCFAE0535B0AE770 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D1FFD654ED1E624CE99EE139509E188 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FE8C718C43E7E9E8E1BB682618E92B59 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B91F0BE7A5ECCEBF5C289286D2F8665F /* AVFoundation.framework in Frameworks */,
-				41D13A9B4F64C6619ABBE9BBA3DF8A28 /* Foundation.framework in Frameworks */,
-				0A91C957C66974094A48E5B41F78F627 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+		03CFE07108869CCC39CF5235CC011575 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CA648648317C71E5A4DA455C8D2DBA8E /* iOS */,
+				191AF6D3DDC36230E7F6E1EF38712D35 /* SnapKit.framework */,
+				977597AB1E7CF83D95B120673C06AEDD /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -367,7 +378,7 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				8492EBC90BF5EAB108C27FD2CBE068F0 /* Development Pods */,
-				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				03CFE07108869CCC39CF5235CC011575 /* Frameworks */,
 				9041B4C549911E478B2279CE2B0E983E /* Pods */,
 				916861220FFEFDDC0A0E0F3FA393D480 /* Products */,
 				293E537C17781E5BEBE79287213EB652 /* Targets Support Files */,
@@ -401,6 +412,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		977597AB1E7CF83D95B120673C06AEDD /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CC1216B4617AD62809B2577F44F92114 /* AVFoundation.framework */,
+				6A55963EB2AE3EBD5B975E7FBCE5574D /* Foundation.framework */,
+				AD95DC0B1BA6C2506F1031AD82920B72 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		BCDB59D25DA9FE00AF0373A6D003B8EA /* BMPlayer */ = {
 			isa = PBXGroup;
 			children = (
@@ -410,16 +431,6 @@
 			);
 			name = BMPlayer;
 			path = ../..;
-			sourceTree = "<group>";
-		};
-		CA648648317C71E5A4DA455C8D2DBA8E /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				9ADFC5A4B2BBCFD9A27B7A059658E773 /* AVFoundation.framework */,
-				5422916563B77A748D40B022EAE1747C /* Foundation.framework */,
-				3A41C04F9FB06B54E2A413E29A588B49 /* UIKit.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		D67F5216EAEE24A2D006177548EE68CA /* BMPlayer */ = {
@@ -447,14 +458,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0DD830F0201E24339144A78BE2BE7F82 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D199DAAF7FDC0A39C8BBCEF89FE445BE /* SnapKit-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		68ADF21F022B350A9F122DD39E834143 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -463,24 +466,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BAAEFF44B7E035E9243E2ED1AF5EC62A /* Headers */ = {
+		6A83747ED46870D9B9B459AE4D7EB18D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB682625966580678DC553D0BEABE7DE /* BMPlayer-umbrella.h in Headers */,
+				039FD224E76B74390A6FBFFBB9252C3F /* SnapKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E290D4C7C5E862BB3D1AD6ED0B3280F9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4060E7F5AD9ED38134F87349EC3A1A0 /* BMPlayer-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		16C19DF11758D78959DA9FA9BB7D996C /* SnapKit */ = {
+		02D86ABF750F29582EDE86EB86F745C7 /* SnapKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 49B6F2A2DDEFF3D48B7A51A4136D2BAC /* Build configuration list for PBXNativeTarget "SnapKit" */;
+			buildConfigurationList = 689E456A4CD393AD536CD2AADBE80EBE /* Build configuration list for PBXNativeTarget "SnapKit" */;
 			buildPhases = (
-				3062EF0B8EDF1220B1306233525EEBE2 /* Sources */,
-				C2ACD7F8370545FCA3B7AD721AA4A82C /* Frameworks */,
-				0DD830F0201E24339144A78BE2BE7F82 /* Headers */,
+				6B8E313E87BB29B5AC7BBFF177551B7D /* Sources */,
+				361FF3BC6166C8488C182DD962E8CC1B /* Frameworks */,
+				6A83747ED46870D9B9B459AE4D7EB18D /* Headers */,
 			);
 			buildRules = (
 			);
@@ -491,36 +502,20 @@
 			productReference = 64BD84B721AEF6218333051539F8A9E0 /* SnapKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		2076B31352333DB08DA744BD7A016B70 /* BMPlayer-BMPlayer */ = {
+		5B69FE7A1C6AF2AF081C41813B79D40F /* BMPlayer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C8632A5F7579F672FA1D443A8269D5C4 /* Build configuration list for PBXNativeTarget "BMPlayer-BMPlayer" */;
+			buildConfigurationList = 690A7CEE3DA7D2DE69F3E6E9517761DF /* Build configuration list for PBXNativeTarget "BMPlayer" */;
 			buildPhases = (
-				2EB7CDC329D56B6C5178AEDE2B9AD526 /* Sources */,
-				359711971F8DA6511610F51AFBA221DB /* Frameworks */,
-				3B7E5D234EF05EA966E4CFEED88CE10B /* Resources */,
+				9EFA645540B47B71A1F0A73C6CF08E39 /* Sources */,
+				61281564896ECC431D4783144BA87769 /* Frameworks */,
+				FE492E59C260A9AF2CEB55B62F52E6F7 /* Resources */,
+				E290D4C7C5E862BB3D1AD6ED0B3280F9 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = "BMPlayer-BMPlayer";
-			productName = "BMPlayer-BMPlayer";
-			productReference = FCD6F5219C87644740B4658B491D3F57 /* BMPlayer.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
-		6ADFB4A1DE088AB12790CD71AE7E6DF4 /* BMPlayer */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7050BA10B5113D57455FE3A943365958 /* Build configuration list for PBXNativeTarget "BMPlayer" */;
-			buildPhases = (
-				4E0509EA0F945EDEA0F96CEF8A21E2D1 /* Sources */,
-				FE8C718C43E7E9E8E1BB682618E92B59 /* Frameworks */,
-				66AF16BE9346F97D9761EF57771914A3 /* Resources */,
-				BAAEFF44B7E035E9243E2ED1AF5EC62A /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D636D1C0798AB3CBDFAB5E4B07E5D91F /* PBXTargetDependency */,
+				A0D6383FAD901A45ABB3AFF20843643E /* PBXTargetDependency */,
+				7524D2908DE0D101839DB0CB32F0B6F8 /* PBXTargetDependency */,
 			);
 			name = BMPlayer;
 			productName = BMPlayer;
@@ -546,6 +541,23 @@
 			productReference = B37F720734FD1721212DA3BAE4BC14AC /* Pods_BMPlayer_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		FA7AF2F5285FA7680124538E836499F8 /* BMPlayer-BMPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12A13175E08F796DB08EB15455948F9E /* Build configuration list for PBXNativeTarget "BMPlayer-BMPlayer" */;
+			buildPhases = (
+				787E833E7F0DD962505E3F8FD579736A /* Sources */,
+				9F14F853A94F9D35CCFAE0535B0AE770 /* Frameworks */,
+				C1DE271590B37992E3050BF445D8C09B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BMPlayer-BMPlayer";
+			productName = "BMPlayer-BMPlayer";
+			productReference = FCD6F5219C87644740B4658B491D3F57 /* BMPlayer.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -554,6 +566,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					5B69FE7A1C6AF2AF081C41813B79D40F = {
+						LastSwiftMigration = 0800;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -567,106 +584,106 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6ADFB4A1DE088AB12790CD71AE7E6DF4 /* BMPlayer */,
-				2076B31352333DB08DA744BD7A016B70 /* BMPlayer-BMPlayer */,
+				5B69FE7A1C6AF2AF081C41813B79D40F /* BMPlayer */,
+				FA7AF2F5285FA7680124538E836499F8 /* BMPlayer-BMPlayer */,
 				D3C6AA54E8DEE5C4A90AB077F255D325 /* Pods-BMPlayer_Example */,
-				16C19DF11758D78959DA9FA9BB7D996C /* SnapKit */,
+				02D86ABF750F29582EDE86EB86F745C7 /* SnapKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3B7E5D234EF05EA966E4CFEED88CE10B /* Resources */ = {
+		C1DE271590B37992E3050BF445D8C09B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C313701A7663DA15C62657D2048179F0 /* BMPlayer_back@2x.png in Resources */,
-				7EFE4AD01BC7EE1D6BC0173A6D30DAAB /* BMPlayer_back@3x.png in Resources */,
-				9192FBF45C922A64DE1FA82416F12F24 /* BMPlayer_fullscreen@2x.png in Resources */,
-				970D97BD72BBECAE53498517358D1E44 /* BMPlayer_fullscreen@3x.png in Resources */,
-				04E64C7FB1A07849C9C3A28FEFD81CC1 /* BMPlayer_mask_image@2x.png in Resources */,
-				0DEABF3416AB56D44981F64D1D55CB6D /* BMPlayer_mask_image@3x.png in Resources */,
-				936FDCCB57D08F901918AB2EB3176D40 /* BMPlayer_pause@2x.png in Resources */,
-				6FC8887E41BE06C859C9A7B0310FDFF2 /* BMPlayer_pause@3x.png in Resources */,
-				6142753E2F7576FEECFE4E28701DC4D9 /* BMPlayer_play@2x.png in Resources */,
-				786A1B62886144DE015BD3D26671832C /* BMPlayer_play@3x.png in Resources */,
-				D343AC80CECC6E64A318EED44044FC04 /* BMPlayer_portialscreen@2x.png in Resources */,
-				6EB33C7CBEAD7EDFA5EDC9FEB56AC22D /* BMPlayer_portialscreen@3x.png in Resources */,
-				9E5128D2ECFC6DCBF46C8F684511043F /* BMPlayer_replay@2x.png in Resources */,
-				1C949B1B2111855808958FBAAE2DB401 /* BMPlayer_replay@3x.png in Resources */,
-				3E2F9DCE12A981D2DBF928B871B0BD06 /* BMPlayer_seek_to_image@2x.png in Resources */,
-				84000C9398F13B27746339FED2368A93 /* BMPlayer_seek_to_image@3x.png in Resources */,
-				32FD9D7244E2B75B0B4499D7C4F825BA /* BMPlayer_slider_thumb@2x.png in Resources */,
-				2E0C549D3F1BC915DDC043F9D71AB9E9 /* BMPlayer_slider_thumb@3x.png in Resources */,
+				45FAF53DC51D9C290059E3209BBADC8C /* BMPlayer_back@2x.png in Resources */,
+				F779A2392AEFEB1E805BCD43965CCAE1 /* BMPlayer_back@3x.png in Resources */,
+				C4156EAADA8ED729C4339342C9C767BC /* BMPlayer_fullscreen@2x.png in Resources */,
+				D2B5B3324344CCA49E48BA69BCD8C41B /* BMPlayer_fullscreen@3x.png in Resources */,
+				F3988DB8C2C48FB2804D8B2ED2781D37 /* BMPlayer_mask_image@2x.png in Resources */,
+				EFAC09A46F9DB06F2E6C0451A31597F1 /* BMPlayer_mask_image@3x.png in Resources */,
+				836041B91CEE4F935A24E03157CF149C /* BMPlayer_pause@2x.png in Resources */,
+				D54AB91873D24CBFA9E1F32072DEF0EA /* BMPlayer_pause@3x.png in Resources */,
+				06A539016122FBAA0E2DE5D5ACB29982 /* BMPlayer_play@2x.png in Resources */,
+				3C2B07824A6CD58C8CE05A7C2DD66C50 /* BMPlayer_play@3x.png in Resources */,
+				3ADB4B94FEA6FA2C79C94CA4862433A6 /* BMPlayer_portialscreen@2x.png in Resources */,
+				04C1AE8CB32BBC39843757F8800D470A /* BMPlayer_portialscreen@3x.png in Resources */,
+				4FE681D8CDC8DC1A7E9EAA83BCB9A0F7 /* BMPlayer_replay@2x.png in Resources */,
+				8CCDB0274ED5C0E17EB0AA49D437276F /* BMPlayer_replay@3x.png in Resources */,
+				7F71F13ED91B8A9A745251C5AB3C5E52 /* BMPlayer_seek_to_image@2x.png in Resources */,
+				1F39452673CE904D13BB67440F347D73 /* BMPlayer_seek_to_image@3x.png in Resources */,
+				1B051A54171CB2E2B1812DBEFEE9B636 /* BMPlayer_slider_thumb@2x.png in Resources */,
+				EC31DADAAA7BA77D63510BC52B8F3739 /* BMPlayer_slider_thumb@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		66AF16BE9346F97D9761EF57771914A3 /* Resources */ = {
+		FE492E59C260A9AF2CEB55B62F52E6F7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2246F46504B7507D0FF1A344F232AEF6 /* BMPlayer.bundle in Resources */,
+				8A1CC840E307FB5B8621E1D0CEA1F63A /* BMPlayer.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2EB7CDC329D56B6C5178AEDE2B9AD526 /* Sources */ = {
+		6B8E313E87BB29B5AC7BBFF177551B7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FA1C107EF55D30DE4FC585FC389CA74 /* Constraint.swift in Sources */,
+				7DDAD19C4FD4002EE4F290FEFB355692 /* ConstraintAttributes.swift in Sources */,
+				6E94CA8A93774A3C044B3A4C10E11FB9 /* ConstraintConfig.swift in Sources */,
+				9FD514B793F0D864395CB9D90E8CBF41 /* ConstraintConstantTarget.swift in Sources */,
+				77D6F1CDF191DDEA233D74081D07CDD1 /* ConstraintDescription.swift in Sources */,
+				D256FA04F35EED63D41BA536599984B4 /* ConstraintInsets.swift in Sources */,
+				800E06F5DC2DEB81F6C9F86240E7E04D /* ConstraintInsetTarget.swift in Sources */,
+				51B8E5AA9F9B81F3117A364E408DBE47 /* ConstraintItem.swift in Sources */,
+				94E1946C564B76714E29085FEADEF68E /* ConstraintLayoutSupport.swift in Sources */,
+				A69C19901A9C5C27F045AC4869EB369F /* ConstraintMaker.swift in Sources */,
+				8E4355A4C511F6C0D266F13187451E1A /* ConstraintMakerEditable.swift in Sources */,
+				530E65D9993DA4DA1DB39C132AD49714 /* ConstraintMakerExtendable.swift in Sources */,
+				07BF8A3F5C96C048CCA095DD91F572F7 /* ConstraintMakerFinalizable.swift in Sources */,
+				5AB9A8C4C8A40D92C89D99484295575D /* ConstraintMakerPriortizable.swift in Sources */,
+				4FACB0662ACC27D56E47BA5166B5872C /* ConstraintMakerRelatable.swift in Sources */,
+				22B32C1FCB205D331B4D93C6DE1978A7 /* ConstraintMultiplierTarget.swift in Sources */,
+				C0D2326D6E0E2DAEB409E97869EC2530 /* ConstraintOffsetTarget.swift in Sources */,
+				ECC7DC3458F408E204F9DC9EC8F96031 /* ConstraintPriorityTarget.swift in Sources */,
+				481E916D4990B7DD7018F9FE19B55C38 /* ConstraintRelatableTarget.swift in Sources */,
+				5F60FA6CF13C4C109B0CC5FB2FA98BB6 /* ConstraintRelation.swift in Sources */,
+				EA8EAE137D26C2479155A6F17BADAF2A /* ConstraintView+Extensions.swift in Sources */,
+				27220FF01AAA36461EBC58389F684BCB /* ConstraintView.swift in Sources */,
+				1623EFFD820618114965C1351E891B94 /* ConstraintViewController+Extensions.swift in Sources */,
+				F543B57FDF44C976085719C73EC5CB45 /* ConstraintViewController.swift in Sources */,
+				34002CD6D070A5CF5024A2F2FD059A17 /* ConstraintViewControllerDSL.swift in Sources */,
+				867C2F3FDBF0717862E9159B8C0DB7BF /* ConstraintViewDSL.swift in Sources */,
+				E23B5BBC74F188AC179D746E04ECBCF4 /* Debugging.swift in Sources */,
+				278E60F4FB9B0239D0D498157C654740 /* LayoutConstraint.swift in Sources */,
+				001B7368CF22EB69977F5965F0C5FFDD /* SnapKit-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		787E833E7F0DD962505E3F8FD579736A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3062EF0B8EDF1220B1306233525EEBE2 /* Sources */ = {
+		9EFA645540B47B71A1F0A73C6CF08E39 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71F8510B559B6A4F69707E36244B984E /* Constraint.swift in Sources */,
-				C2BDA0FD5AE8C860F5683CC86CA5A6E2 /* ConstraintAttributes.swift in Sources */,
-				64772822B6440DF9A6A78D0E95FB1DBB /* ConstraintConfig.swift in Sources */,
-				7EB1EECDBF6069A6EED3F6CFB5B0D495 /* ConstraintConstantTarget.swift in Sources */,
-				608C526A49F9C5F25965F045E832A21E /* ConstraintDescription.swift in Sources */,
-				318563F839B8807FF9508A54BDDE72E4 /* ConstraintInsets.swift in Sources */,
-				B1E019A861CBA5AC26D902BAF975CA81 /* ConstraintInsetTarget.swift in Sources */,
-				5D1FC7C7BEC96F915B20C5478AB8090B /* ConstraintItem.swift in Sources */,
-				A83F48CBA2DCC6ED779663A3B6C210B4 /* ConstraintLayoutSupport.swift in Sources */,
-				B544D4F0BC16F608F8A336A48C7CB1F7 /* ConstraintMaker.swift in Sources */,
-				87194C2CB7E9F97ACC39FCEBB793BFE3 /* ConstraintMakerEditable.swift in Sources */,
-				BC1885F4A24F6CB9370ADAF8DAF3A8C0 /* ConstraintMakerExtendable.swift in Sources */,
-				209AD5F50D52B109A3A5BC2FB5B9E03A /* ConstraintMakerFinalizable.swift in Sources */,
-				813D8F3E1BC840D7EE07426B26DE8E46 /* ConstraintMakerPriortizable.swift in Sources */,
-				7BDB0827516D4829C2F0CA76B1109F9A /* ConstraintMakerRelatable.swift in Sources */,
-				224AC51D178216439463D8892E405F8C /* ConstraintMultiplierTarget.swift in Sources */,
-				C67C1E35AC1D0FFEB7E1C326D566B249 /* ConstraintOffsetTarget.swift in Sources */,
-				706B59AA052DB786171409532F32C59C /* ConstraintPriorityTarget.swift in Sources */,
-				8930FFC3386A8D16427B751525328E5B /* ConstraintRelatableTarget.swift in Sources */,
-				82BEBA76FC963B741C2B93118B1624AA /* ConstraintRelation.swift in Sources */,
-				23E94F9E23ABD2641AF457D2120A9E7A /* ConstraintView+Extensions.swift in Sources */,
-				834BD85B7A612F4327A36F913CD05FAD /* ConstraintView.swift in Sources */,
-				A82ED7984CD97D6B947C9B2160921591 /* ConstraintViewController+Extensions.swift in Sources */,
-				EAE1DA27E16DB147C230F5A9FB98F4C8 /* ConstraintViewController.swift in Sources */,
-				BB12C70CAA768E7C7640FB552C79A0D5 /* ConstraintViewControllerDSL.swift in Sources */,
-				89CF645CE380224372ADD61840906B83 /* ConstraintViewDSL.swift in Sources */,
-				0BDE99B3F62C91630DE02B9DE7A6A3BD /* Debugging.swift in Sources */,
-				F9144FD0F166DC4A55DCAE463DAF0008 /* LayoutConstraint.swift in Sources */,
-				C3D1AA7F8CEEC95C890E5A2D7A48AEA9 /* SnapKit-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4E0509EA0F945EDEA0F96CEF8A21E2D1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				70C90FC662357F18848477DAF23BCB91 /* BMPlayer-dummy.m in Sources */,
-				787A53F71C08242BEF53756E8041E9A0 /* BMPlayer.swift in Sources */,
-				E57D175DF4E9CA380D525CCDF36CD07B /* BMPlayerClearityChooseButton.swift in Sources */,
-				7C14ED8E1466D4EBF8D80F1B4FF29A5F /* BMPlayerControlView.swift in Sources */,
-				B22E9BDDAB1BCB1EBDA8DF5DE9FDA33D /* BMPlayerItem.swift in Sources */,
-				9079FFB8EF66D5C4D94010E007829345 /* BMPlayerLayerView.swift in Sources */,
-				A678992DD239B7081CEBE7288DF606F9 /* BMPlayerManager.swift in Sources */,
-				C68FF9E8E1019561B2EC4C99D6F1A774 /* BMPlayerProtocols.swift in Sources */,
+				E85E17968BB2F90C1AF2D8F6805C81E7 /* BMPlayer-dummy.m in Sources */,
+				1EF34F8F8D81AFFD636EA04BD62CF50F /* BMPlayer.swift in Sources */,
+				F8EDB736C591CBF38C0EEDD52D2FD0D3 /* BMPlayerClearityChooseButton.swift in Sources */,
+				A450AECF16FC01166BDAE1CEF3820E05 /* BMPlayerControlView.swift in Sources */,
+				8F099C775FED240D8A66C678BC38ADC8 /* BMPlayerItem.swift in Sources */,
+				D16361B819F8EB8D9A52FD8B6E6594C9 /* BMPlayerLayerView.swift in Sources */,
+				184E318A31CF1687A99EA89A6895CB54 /* BMPlayerManager.swift in Sources */,
+				E05A7D11F14EFD39A35BC3E678DE7BFA /* BMPlayerProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -681,45 +698,33 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		7524D2908DE0D101839DB0CB32F0B6F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = 02D86ABF750F29582EDE86EB86F745C7 /* SnapKit */;
+			targetProxy = 15F17AADDD7C6C08638FC431244A3442 /* PBXContainerItemProxy */;
+		};
 		8C14E79E41B0CCED28C7D162F0A18444 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SnapKit;
-			target = 16C19DF11758D78959DA9FA9BB7D996C /* SnapKit */;
+			target = 02D86ABF750F29582EDE86EB86F745C7 /* SnapKit */;
 			targetProxy = 94B6DD30897FC2F8CFFD537848215310 /* PBXContainerItemProxy */;
+		};
+		A0D6383FAD901A45ABB3AFF20843643E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "BMPlayer-BMPlayer";
+			target = FA7AF2F5285FA7680124538E836499F8 /* BMPlayer-BMPlayer */;
+			targetProxy = AC04BF2E839E3295782553106D1C49B6 /* PBXContainerItemProxy */;
 		};
 		B686076BF9BAA05D06F5D4790CC23174 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = BMPlayer;
-			target = 6ADFB4A1DE088AB12790CD71AE7E6DF4 /* BMPlayer */;
+			target = 5B69FE7A1C6AF2AF081C41813B79D40F /* BMPlayer */;
 			targetProxy = 867DDB9FB79D8632A3D5D5DD9AB3A494 /* PBXContainerItemProxy */;
-		};
-		D636D1C0798AB3CBDFAB5E4B07E5D91F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "BMPlayer-BMPlayer";
-			target = 2076B31352333DB08DA744BD7A016B70 /* BMPlayer-BMPlayer */;
-			targetProxy = C58DA09B3CF6905E239DD97D0BC156F1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		01AB3059A40C0953A0BF5ABF826ABB6F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B41071F0B72BA7429A4380C68085D55E /* BMPlayer.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/BMPlayer";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/BMPlayer/ResourceBundle-BMPlayer-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = BMPlayer;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
 		0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -758,6 +763,37 @@
 			};
 			name = Release;
 		};
+		0EE96B2C7532686A32E54DF27A66FFF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B41071F0B72BA7429A4380C68085D55E /* BMPlayer.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BMPlayer/BMPlayer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BMPlayer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BMPlayer/BMPlayer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = BMPlayer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		168FD0C118FE93988484B368DE617F57 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E46F246B4B757A474D4F92637D1CEC11 /* Pods-BMPlayer_Example.release.xcconfig */;
@@ -792,37 +828,25 @@
 			};
 			name = Release;
 		};
-		3C804A40D79CA094E8FD8758B3D18D6A /* Release */ = {
+		1845D1C13F09E849CB3767A3A3E42F40 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B41071F0B72BA7429A4380C68085D55E /* BMPlayer.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/BMPlayer";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/BMPlayer/BMPlayer-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BMPlayer/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				INFOPLIST_FILE = "Target Support Files/BMPlayer/ResourceBundle-BMPlayer-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/BMPlayer/BMPlayer.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = BMPlayer;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
-		6BDDB2944E96DD99EEB8E52F6F683C66 /* Debug */ = {
+		2E3043D69B3BE6E8CEC5E35A6CE62C50 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 72137FFE4FE503B8AF2F390734ECCCE3 /* SnapKit.xcconfig */;
 			buildSettings = {
@@ -853,7 +877,37 @@
 			};
 			name = Debug;
 		};
-		896603510F9AFF2F8C872960E6B48C64 /* Debug */ = {
+		57ACC5C1B6196EAD77C04F72124216EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B41071F0B72BA7429A4380C68085D55E /* BMPlayer.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BMPlayer/BMPlayer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BMPlayer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BMPlayer/BMPlayer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = BMPlayer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6062D74B9C7AB949CAB114CA7C1235EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B41071F0B72BA7429A4380C68085D55E /* BMPlayer.xcconfig */;
 			buildSettings = {
@@ -871,36 +925,35 @@
 			};
 			name = Debug;
 		};
-		B091CDCE27884B87EB995337DB975F2A /* Debug */ = {
+		75366F1C4E585C637D6957D5CE6B7DC2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B41071F0B72BA7429A4380C68085D55E /* BMPlayer.xcconfig */;
+			baseConfigurationReference = 72137FFE4FE503B8AF2F390734ECCCE3 /* SnapKit.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/BMPlayer/BMPlayer-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BMPlayer/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/BMPlayer/BMPlayer.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = BMPlayer;
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SnapKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -979,39 +1032,18 @@
 			};
 			name = Debug;
 		};
-		F29470D982E1EFAC679D6BAC741653A1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72137FFE4FE503B8AF2F390734ECCCE3 /* SnapKit.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SnapKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SnapKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		12A13175E08F796DB08EB15455948F9E /* Build configuration list for PBXNativeTarget "BMPlayer-BMPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6062D74B9C7AB949CAB114CA7C1235EE /* Debug */,
+				1845D1C13F09E849CB3767A3A3E42F40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1021,11 +1053,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		49B6F2A2DDEFF3D48B7A51A4136D2BAC /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
+		689E456A4CD393AD536CD2AADBE80EBE /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6BDDB2944E96DD99EEB8E52F6F683C66 /* Debug */,
-				F29470D982E1EFAC679D6BAC741653A1 /* Release */,
+				2E3043D69B3BE6E8CEC5E35A6CE62C50 /* Debug */,
+				75366F1C4E585C637D6957D5CE6B7DC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		690A7CEE3DA7D2DE69F3E6E9517761DF /* Build configuration list for PBXNativeTarget "BMPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EE96B2C7532686A32E54DF27A66FFF7 /* Debug */,
+				57ACC5C1B6196EAD77C04F72124216EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1035,24 +1076,6 @@
 			buildConfigurations = (
 				DFAEA034394B53AC0FC1B153A34C7A40 /* Debug */,
 				168FD0C118FE93988484B368DE617F57 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7050BA10B5113D57455FE3A943365958 /* Build configuration list for PBXNativeTarget "BMPlayer" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B091CDCE27884B87EB995337DB975F2A /* Debug */,
-				3C804A40D79CA094E8FD8758B3D18D6A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C8632A5F7579F672FA1D443A8269D5C4 /* Build configuration list for PBXNativeTarget "BMPlayer-BMPlayer" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				896603510F9AFF2F8C872960E6B48C64 /* Debug */,
-				01AB3059A40C0953A0BF5ABF826ABB6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

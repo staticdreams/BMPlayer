@@ -22,7 +22,7 @@ public class BMPlayerItem {
 
 
 public class BMPlayerItemDefinitionItem: BMPlayerItemDefinitionProtocol {
-    public var playURL: NSURL
+    public var playURL: URL
     public var definitionName: String
     
     /**
@@ -31,7 +31,7 @@ public class BMPlayerItemDefinitionItem: BMPlayerItemDefinitionProtocol {
      - parameter url:         资源URL
      - parameter qualityName: 资源清晰度标签
      */
-    public init(url:NSURL, definitionName: String) {
+    public init(url:URL, definitionName: String) {
         self.playURL        = url
         self.definitionName = definitionName
     }

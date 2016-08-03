@@ -25,5 +25,10 @@
   "frameworks": [
     "UIKit",
     "AVFoundation"
-  ]
+  ],
+  "dependencies": {
+    "SnapKit": [
+
+    ]
+  }
 }

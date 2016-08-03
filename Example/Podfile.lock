@@ -1,5 +1,6 @@
 PODS:
-  - BMPlayer (0.2.7)
+  - BMPlayer (0.2.7):
+    - SnapKit
   - SnapKit (0.40.0.beta2)
 
 DEPENDENCIES:
@@ -19,7 +20,7 @@ CHECKOUT OPTIONS:
     :git: https://github.com/SnapKit/SnapKit.git
 
 SPEC CHECKSUMS:
-  BMPlayer: bde2e851bce179a93caf249f680a7c13dea7197a
+  BMPlayer: 22d3cf1f4cd91c68c17a800e516068d163fc2dde
   SnapKit: 405236dfbf278b9d545db29f3950ae7e7f14f348
 
 PODFILE CHECKSUM: 69a500dda645e4562924cff0920c3bb94d374256

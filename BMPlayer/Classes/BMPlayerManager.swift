@@ -7,14 +7,14 @@
 //
 
 import UIKit
-import NVActivityIndicatorView
+//import NVActivityIndicatorView
 
 public let BMPlayerConf = BMPlayerManager.shared
 
 public enum BMPlayerTopBarShowCase: Int {
-    case Always         = 0 /// 始终显示
-    case HorizantalOnly = 1 /// 只在横屏界面显示
-    case None           = 2 /// 不显示
+    case always         = 0 /// 始终显示
+    case horizantalOnly = 1 /// 只在横屏界面显示
+    case none           = 2 /// 不显示
 }
 
 public class BMPlayerManager {
@@ -22,15 +22,15 @@ public class BMPlayerManager {
     public static let shared = BMPlayerManager()
     
     /// 主题色
-    public var tintColor   = UIColor.whiteColor()
+    public var tintColor   = UIColor.white
     
     /// Loader样式
-    public var loaderType  = NVActivityIndicatorType.BallRotateChase
+//    public var loaderType  = NVActivityIndicatorType.BallRotateChase
 
     /// 是否自动播放
     public var shouldAutoPlay = true
     
-    public var topBarShowInCase = BMPlayerTopBarShowCase.Always
+    public var topBarShowInCase = BMPlayerTopBarShowCase.always
     
     /// 是否显示慢放和镜像按钮
     public var slowAndMirror = false
@@ -42,9 +42,9 @@ public class BMPlayerManager {
      
      - parameter info: log信息
      */
-    func log(info:String) {
+    func log(_ info:String) {
         if allowLog {
-            print(info)
+            print(info, terminator: "")
         }
     }
 }

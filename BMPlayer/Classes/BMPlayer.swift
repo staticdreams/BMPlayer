@@ -11,23 +11,23 @@ import SnapKit
 import MediaPlayer
 
 enum BMPlayerState {
-    case NotSetURL      // 未设置URL
-    case ReadyToPlay    // 可以播放
-    case Buffering      // 缓冲中
-    case BufferFinished // 缓冲完毕
-    case PlayedToTheEnd // 播放结束
-    case Error          // 出现错误
+    case notSetURL      // 未设置URL
+    case readyToPlay    // 可以播放
+    case buffering      // 缓冲中
+    case bufferFinished // 缓冲完毕
+    case playedToTheEnd // 播放结束
+    case error          // 出现错误
 }
 
 /// 枚举值，包含水平移动方向和垂直移动方向
 enum BMPanDirection: Int {
-    case Horizontal = 0
-    case Vertical   = 1
+    case horizontal = 0
+    case vertical   = 1
 }
 
 enum BMPlayerItemType {
-    case URL
-    case BMPlayerItem
+    case url
+    case bmPlayerItem
 }
 
 public class BMPlayer: UIView {
@@ -44,20 +44,20 @@ public class BMPlayer: UIView {
     
     private var customControllView: BMPlayerCustomControlView?
     
-    var playerItemType = BMPlayerItemType.URL
+    var playerItemType = BMPlayerItemType.url
     
-    var videoItemURL: NSURL!
+    var videoItemURL: URL!
     
     var videoTitle = ""
     
     var isFullScreen:Bool {
         get {
-            return UIApplication.sharedApplication().statusBarOrientation.isLandscape
+            return UIApplication.shared.statusBarOrientation.isLandscape
         }
     }
     
     /// 滑动方向
-    private var panDirection = BMPanDirection.Horizontal
+    private var panDirection = BMPanDirection.horizontal
     /// 音量滑竿
     private var volumeViewSlider: UISlider!
     
@@ -65,10 +65,10 @@ public class BMPlayer: UIView {
     private let BMPlayerControlBarAutoFadeOutTimeInterval:Double    = 0.5
     
     /// 用来保存时间状态
-    private var sumTime         : NSTimeInterval = 0
-    private var totalDuration   : NSTimeInterval = 0
-    private var currentPosition : NSTimeInterval = 0
-    private var shouldSeekTo    : NSTimeInterval = 0
+    private var sumTime         : TimeInterval = 0
+    private var totalDuration   : TimeInterval = 0
+    private var currentPosition : TimeInterval = 0
+    private var shouldSeekTo    : TimeInterval = 0
     
     private var isURLSet        = false
     private var isSliderSliding = false
@@ -86,8 +86,8 @@ public class BMPlayer: UIView {
      - parameter url:   视频URL
      - parameter title: 视频标题
      */
-    public func playWithURL(url: NSURL, title: String = "") {
-        playerItemType              = BMPlayerItemType.URL
+    public func playWithURL(_ url: URL, title: String = "") {
+        playerItemType              = BMPlayerItemType.url
         videoItemURL                = url
         controlView.playerTitleLabel?.text = title
         
@@ -106,8 +106,8 @@ public class BMPlayer: UIView {
      - parameter title: 视频标题
      - parameter definitionIndex: 起始清晰度
      */
-    public func playWithPlayerItem(item:BMPlayerItem, definitionIndex: Int = 0) {
-        playerItemType              = BMPlayerItemType.BMPlayerItem
+    public func playWithPlayerItem(_ item:BMPlayerItem, definitionIndex: Int = 0) {
+        playerItemType              = BMPlayerItemType.bmPlayerItem
         videoItem                   = item
         controlView.playerTitleLabel?.text = item.title
         currentDefinition           = definitionIndex
@@ -135,7 +135,7 @@ public class BMPlayer: UIView {
      */
     public func play() {
         if !isURLSet {
-            if playerItemType == BMPlayerItemType.BMPlayerItem {
+            if playerItemType == BMPlayerItemType.bmPlayerItem {
                 playerLayer?.videoURL       = videoItem.resource[currentDefinition].playURL
             } else {
                 playerLayer?.videoURL       = videoItemURL
@@ -161,21 +161,21 @@ public class BMPlayer: UIView {
      开始自动隐藏UI倒计时
      */
     public func autoFadeOutControlBar() {
-        NSObject.cancelPreviousPerformRequestsWithTarget(self, selector: #selector(hideControlViewAnimated), object: nil)
-        self.performSelector(#selector(hideControlViewAnimated), withObject: nil, afterDelay: BMPlayerAnimationTimeInterval)
+        NSObject.cancelPreviousPerformRequests(withTarget: self, selector: #selector(hideControlViewAnimated), object: nil)
+        self.perform(#selector(hideControlViewAnimated), with: nil, afterDelay: BMPlayerAnimationTimeInterval)
     }
     
     /**
      取消UI自动隐藏
      */
     public func cancelAutoFadeOutControlBar() {
-        NSObject.cancelPreviousPerformRequestsWithTarget(self)
+        NSObject.cancelPreviousPerformRequests(withTarget: self)
     }
     
     /**
      旋转屏幕时更新UI
      */
-    public func updateUI(isFullScreen: Bool) {
+    public func updateUI(_ isFullScreen: Bool) {
         controlView.updateUI(isFullScreen)
     }
     
@@ -193,19 +193,19 @@ public class BMPlayer: UIView {
         if let player = playerLayer {
             if player.isPlaying {
                 autoFadeOutControlBar()
-                controlView.playerPlayButton?.selected = true
+                controlView.playerPlayButton?.isSelected = true
             } else {
-                controlView.playerPlayButton?.selected = false
+                controlView.playerPlayButton?.isSelected = false
             }
         }
     }
     
     
     @objc private func hideControlViewAnimated() {
-        UIView.animateWithDuration(BMPlayerControlBarAutoFadeOutTimeInterval, animations: {
+        UIView.animate(withDuration: BMPlayerControlBarAutoFadeOutTimeInterval, animations: {
             self.controlView.hidePlayerUIComponents()
             if self.isFullScreen {
-                UIApplication.sharedApplication().setStatusBarHidden(true, withAnimation: UIStatusBarAnimation.Fade)
+                UIApplication.shared.setStatusBarHidden(true, with: UIStatusBarAnimation.fade)
             }
         }) { (_) in
             self.isMaskShowing = false
@@ -213,16 +213,16 @@ public class BMPlayer: UIView {
     }
     
     @objc private func showControlViewAnimated() {
-        UIView.animateWithDuration(BMPlayerControlBarAutoFadeOutTimeInterval, animations: {
+        UIView.animate(withDuration: BMPlayerControlBarAutoFadeOutTimeInterval, animations: {
             self.controlView.showPlayerUIComponents()
-            UIApplication.sharedApplication().setStatusBarHidden(false, withAnimation: UIStatusBarAnimation.Fade)
+            UIApplication.shared.setStatusBarHidden(false, with: UIStatusBarAnimation.fade)
         }) { (_) in
             self.autoFadeOutControlBar()
             self.isMaskShowing = true
         }
     }
     
-    @objc private func tapGestureTapped(sender: UIGestureRecognizer) {
+    @objc private func tapGestureTapped(_ sender: UIGestureRecognizer) {
         if isMaskShowing {
             hideControlViewAnimated()
             autoFadeOutControlBar()
@@ -231,33 +231,33 @@ public class BMPlayer: UIView {
         }
     }
     
-    @objc private func panDirection(pan: UIPanGestureRecognizer) {
+    @objc private func panDirection(_ pan: UIPanGestureRecognizer) {
         // 根据在view上Pan的位置，确定是调音量还是亮度
-        let locationPoint = pan.locationInView(self)
+        let locationPoint = pan.location(in: self)
         
         // 我们要响应水平移动和垂直移动
         // 根据上次和本次移动的位置，算出一个速率的point
-        let velocityPoint = pan.velocityInView(self)
+        let velocityPoint = pan.velocity(in: self)
         
         // 判断是垂直移动还是水平移动
         switch pan.state {
-        case UIGestureRecognizerState.Began:
+        case UIGestureRecognizerState.began:
             // 使用绝对值来判断移动的方向
             
             let x = fabs(velocityPoint.x)
             let y = fabs(velocityPoint.y)
             
             if x > y {
-                self.panDirection = BMPanDirection.Horizontal
+                self.panDirection = BMPanDirection.horizontal
                 
                 // 给sumTime初值
                 if let player = playerLayer?.player {
                     let time = player.currentTime()
-                    self.sumTime = NSTimeInterval(time.value) / NSTimeInterval(time.timescale)
+                    self.sumTime = TimeInterval(time.value) / TimeInterval(time.timescale)
                 }
                 
             } else {
-                self.panDirection = BMPanDirection.Vertical
+                self.panDirection = BMPanDirection.vertical
                 if locationPoint.x > self.bounds.size.width / 2 {
                     self.isVolume = true
                 } else {
@@ -265,19 +265,19 @@ public class BMPlayer: UIView {
                 }
             }
             
-        case UIGestureRecognizerState.Changed:
+        case UIGestureRecognizerState.changed:
             cancelAutoFadeOutControlBar()
             switch self.panDirection {
-            case BMPanDirection.Horizontal:
+            case BMPanDirection.horizontal:
                 self.horizontalMoved(velocityPoint.x)
-            case BMPanDirection.Vertical:
+            case BMPanDirection.vertical:
                 self.verticalMoved(velocityPoint.y)
             }
-        case UIGestureRecognizerState.Ended:
+        case UIGestureRecognizerState.ended:
             // 移动结束也需要判断垂直或者平移
             // 比如水平移动结束时，要快进到指定位置，如果这里没有判断，当我们调节音量完之后，会出现屏幕跳动的bug
             switch (self.panDirection) {
-            case BMPanDirection.Horizontal:
+            case BMPanDirection.horizontal:
                 controlView.hideSeekToView()
                 isSliderSliding = false
                 playerLayer?.seekToTime(Int(self.sumTime), completionHandler: nil)
@@ -285,7 +285,7 @@ public class BMPlayer: UIView {
                 self.sumTime = 0.0
                 
             //                controlView.showLoader()
-            case BMPanDirection.Vertical:
+            case BMPanDirection.vertical:
                 self.isVolume = false
             }
         default:
@@ -293,22 +293,22 @@ public class BMPlayer: UIView {
         }
     }
     
-    private func verticalMoved(value: CGFloat) {
-        self.isVolume ? (self.volumeViewSlider.value -= Float(value / 10000)) : (UIScreen.mainScreen().brightness -= value / 10000)
+    private func verticalMoved(_ value: CGFloat) {
+        self.isVolume ? (self.volumeViewSlider.value -= Float(value / 10000)) : (UIScreen.main.brightness -= value / 10000)
     }
     
-    private func horizontalMoved(value: CGFloat) {
+    private func horizontalMoved(_ value: CGFloat) {
         isSliderSliding = true
         if let playerItem = playerLayer?.playerItem {
             // 每次滑动需要叠加时间，通过一定的比例，使滑动一直处于统一水平
-            self.sumTime = self.sumTime + NSTimeInterval(value) / 100.0 * (NSTimeInterval(self.totalDuration)/400)
+            self.sumTime = self.sumTime + TimeInterval(value) / 100.0 * (TimeInterval(self.totalDuration)/400)
             
             let totalTime       = playerItem.duration
             
             // 防止出现NAN
             if totalTime.timescale == 0 { return }
             
-            let totalDuration   = NSTimeInterval(totalTime.value) / NSTimeInterval(totalTime.timescale)
+            let totalDuration   = TimeInterval(totalTime.value) / TimeInterval(totalTime.timescale)
             if (self.sumTime > totalDuration) { self.sumTime = totalDuration}
             if (self.sumTime < 0){ self.sumTime = 0}
             
@@ -321,17 +321,17 @@ public class BMPlayer: UIView {
         }
     }
     
-    @objc private func progressSliderTouchBegan(sender: UISlider)  {
+    @objc private func progressSliderTouchBegan(_ sender: UISlider)  {
         playerLayer?.onTimeSliderBegan()
         isSliderSliding = true
     }
     
-    @objc private func progressSliderValueChanged(sender: UISlider)  {
+    @objc private func progressSliderValueChanged(_ sender: UISlider)  {
         self.pause(allowAutoPlay: true)
         cancelAutoFadeOutControlBar()
     }
     
-    @objc private func progressSliderTouchEnded(sender: UISlider)  {
+    @objc private func progressSliderTouchEnded(_ sender: UISlider)  {
         isSliderSliding = false
         autoFadeOutControlBar()
         let target = self.totalDuration * Double(sender.value)
@@ -339,7 +339,7 @@ public class BMPlayer: UIView {
         autoPlay()
     }
     
-    @objc private func backButtonPressed(button: UIButton) {
+    @objc private func backButtonPressed(_ button: UIButton) {
         if isFullScreen {
             fullScreenButtonPressed(nil)
         } else {
@@ -348,29 +348,29 @@ public class BMPlayer: UIView {
         }
     }
     
-    @objc private func slowButtonPressed(button: UIButton) {
+    @objc private func slowButtonPressed(_ button: UIButton) {
         autoFadeOutControlBar()
         if isSlowed {
             self.playerLayer?.player?.rate = 1.0
             self.isSlowed = false
-            self.controlView.playerSlowButton?.setTitle("慢放", forState: .Normal)
+            self.controlView.playerSlowButton?.setTitle("慢放", for: UIControlState())
         } else {
             self.playerLayer?.player?.rate = 0.5
             self.isSlowed = true
-            self.controlView.playerSlowButton?.setTitle("正常", forState: .Normal)
+            self.controlView.playerSlowButton?.setTitle("正常", for: UIControlState())
         }
     }
     
-    @objc private func mirrorButtonPressed(button: UIButton) {
+    @objc private func mirrorButtonPressed(_ button: UIButton) {
         autoFadeOutControlBar()
         if isMirrored {
-            self.playerLayer?.transform = CGAffineTransformMakeScale(1.0, 1.0)
+            self.playerLayer?.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
             self.isMirrored = false
-            self.controlView.playerMirrorButton?.setTitle("镜像", forState: .Normal)
+            self.controlView.playerMirrorButton?.setTitle("镜像", for: UIControlState())
         } else {
-            self.playerLayer?.transform = CGAffineTransformMakeScale(-1.0, 1.0)
+            self.playerLayer?.transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
             self.isMirrored = true
-            self.controlView.playerMirrorButton?.setTitle("正常", forState: .Normal)
+            self.controlView.playerMirrorButton?.setTitle("正常", for: UIControlState())
         }    }
     
     @objc private func replayButtonPressed() {
@@ -380,8 +380,8 @@ public class BMPlayer: UIView {
         self.play()
     }
     
-    @objc private func playButtonPressed(button: UIButton) {
-        if button.selected {
+    @objc private func playButtonPressed(_ button: UIButton) {
+        if button.isSelected {
             self.pause()
         } else {
             self.play()
@@ -392,19 +392,19 @@ public class BMPlayer: UIView {
         self.updateUI(isFullScreen)
     }
     
-    @objc private func fullScreenButtonPressed(button: UIButton?) {
+    @objc private func fullScreenButtonPressed(_ button: UIButton?) {
         if !isURLSet {
             //            self.play()
         }
         controlView.updateUI(!self.isFullScreen)
         if isFullScreen {
-            UIDevice.currentDevice().setValue(UIInterfaceOrientation.Portrait.rawValue, forKey: "orientation")
-            UIApplication.sharedApplication().setStatusBarHidden(false, withAnimation: UIStatusBarAnimation.Fade)
-            UIApplication.sharedApplication().setStatusBarOrientation(UIInterfaceOrientation.Portrait, animated: false)
+            UIDevice.current.setValue(UIInterfaceOrientation.portrait.rawValue, forKey: "orientation")
+            UIApplication.shared.setStatusBarHidden(false, with: UIStatusBarAnimation.fade)
+            UIApplication.shared.setStatusBarOrientation(UIInterfaceOrientation.portrait, animated: false)
         } else {
-            UIDevice.currentDevice().setValue(UIInterfaceOrientation.LandscapeRight.rawValue, forKey: "orientation")
-            UIApplication.sharedApplication().setStatusBarHidden(false, withAnimation: UIStatusBarAnimation.Fade)
-            UIApplication.sharedApplication().setStatusBarOrientation(UIInterfaceOrientation.LandscapeRight, animated: false)
+            UIDevice.current.setValue(UIInterfaceOrientation.landscapeRight.rawValue, forKey: "orientation")
+            UIApplication.shared.setStatusBarHidden(false, with: UIStatusBarAnimation.fade)
+            UIApplication.shared.setStatusBarOrientation(UIInterfaceOrientation.landscapeRight, animated: false)
         }
     }
     
@@ -412,7 +412,7 @@ public class BMPlayer: UIView {
     deinit {
         playerLayer?.pause()
         playerLayer?.prepareToDeinit()
-        NSNotificationCenter.defaultCenter().removeObserver(self, name: UIApplicationDidChangeStatusBarOrientationNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIApplicationDidChangeStatusBarOrientation, object: nil)
     }
     
     
@@ -429,7 +429,7 @@ public class BMPlayer: UIView {
     }
     
     public convenience init (customControllView: BMPlayerCustomControlView?) {
-        self.init(frame:CGRectZero)
+        self.init(frame:CGRect.zero)
         self.customControllView = customControllView
         initUI()
         initUIData()
@@ -441,17 +441,16 @@ public class BMPlayer: UIView {
         self.init(customControllView:nil)
     }
 
-
     
-    private func formatSecondsToString(secounds: NSTimeInterval) -> String {
+    private func formatSecondsToString(_ secounds: TimeInterval) -> String {
         let Min = Int(secounds / 60)
-        let Sec = Int(secounds % 60)
+        let Sec = Int(secounds.truncatingRemainder(dividingBy: 60))
         return String(format: "%02d:%02d", Min, Sec)
     }
     
     // MARK: - 初始化
     private func initUI() {
-        self.backgroundColor = UIColor.blackColor()
+        self.backgroundColor = UIColor.black
         
         if let customView = customControllView {
             controlView = customView
@@ -475,16 +474,16 @@ public class BMPlayer: UIView {
     }
     
     private func initUIData() {
-        controlView.playerPlayButton?.addTarget(self, action: #selector(self.playButtonPressed(_:)), forControlEvents: UIControlEvents.TouchUpInside)
-        controlView.playerFullScreenButton?.addTarget(self, action: #selector(self.fullScreenButtonPressed(_:)), forControlEvents: UIControlEvents.TouchUpInside)
-        controlView.playerBackButton?.addTarget(self, action: #selector(self.backButtonPressed(_:)), forControlEvents: UIControlEvents.TouchUpInside)
-        controlView.playerTimeSlider?.addTarget(self, action: #selector(progressSliderTouchBegan(_:)), forControlEvents: UIControlEvents.TouchDown)
-        controlView.playerTimeSlider?.addTarget(self, action: #selector(progressSliderValueChanged(_:)), forControlEvents: UIControlEvents.ValueChanged)
-        controlView.playerTimeSlider?.addTarget(self, action: #selector(progressSliderTouchEnded(_:)), forControlEvents: [UIControlEvents.TouchUpInside,UIControlEvents.TouchCancel, UIControlEvents.TouchUpOutside])
-        controlView.playerSlowButton?.addTarget(self, action: #selector(slowButtonPressed(_:)), forControlEvents: .TouchUpInside)
-        controlView.playerMirrorButton?.addTarget(self, action: #selector(mirrorButtonPressed(_:)), forControlEvents: .TouchUpInside)
+        controlView.playerPlayButton?.addTarget(self, action: #selector(self.playButtonPressed(_:)), for: UIControlEvents.touchUpInside)
+        controlView.playerFullScreenButton?.addTarget(self, action: #selector(self.fullScreenButtonPressed(_:)), for: UIControlEvents.touchUpInside)
+        controlView.playerBackButton?.addTarget(self, action: #selector(self.backButtonPressed(_:)), for: UIControlEvents.touchUpInside)
+        controlView.playerTimeSlider?.addTarget(self, action: #selector(progressSliderTouchBegan(_:)), for: UIControlEvents.touchDown)
+        controlView.playerTimeSlider?.addTarget(self, action: #selector(progressSliderValueChanged(_:)), for: UIControlEvents.valueChanged)
+        controlView.playerTimeSlider?.addTarget(self, action: #selector(progressSliderTouchEnded(_:)), for: [UIControlEvents.touchUpInside,UIControlEvents.touchCancel, UIControlEvents.touchUpOutside])
+        controlView.playerSlowButton?.addTarget(self, action: #selector(slowButtonPressed(_:)), for: .touchUpInside)
+        controlView.playerMirrorButton?.addTarget(self, action: #selector(mirrorButtonPressed(_:)), for: .touchUpInside)
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.onOrientationChanged), name: UIApplicationDidChangeStatusBarOrientationNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.onOrientationChanged), name: NSNotification.Name.UIApplicationDidChangeStatusBarOrientation, object: nil)
     }
     
     private func configureVolume() {
@@ -498,7 +497,7 @@ public class BMPlayer: UIView {
     
     private func preparePlayer() {
         playerLayer = BMPlayerLayerView()
-        insertSubview(playerLayer!, atIndex: 0)
+        insertSubview(playerLayer!, at: 0)
         playerLayer!.snp_makeConstraints { (make) in
             make.edges.equalTo(self)
         }
@@ -509,35 +508,35 @@ public class BMPlayer: UIView {
 }
 
 extension BMPlayer: BMPlayerLayerViewDelegate {
-    func bmPlayer(player player: BMPlayerLayerView, playerIsPlaying playing: Bool) {
+    func bmPlayer(player: BMPlayerLayerView, playerIsPlaying playing: Bool) {
         playStateDidChanged()
     }
     
-    func bmPlayer(player player: BMPlayerLayerView ,loadedTimeDidChange  loadedDuration: NSTimeInterval , totalDuration: NSTimeInterval) {
+    func bmPlayer(player: BMPlayerLayerView ,loadedTimeDidChange  loadedDuration: TimeInterval , totalDuration: TimeInterval) {
         self.totalDuration = totalDuration
         BMPlayerManager.shared.log("loadedTimeDidChange - \(loadedDuration) - \(totalDuration)")
         controlView.playerProgressView?.setProgress(Float(loadedDuration)/Float(totalDuration), animated: true)
     }
     
-    func bmPlayer(player player: BMPlayerLayerView, playerStateDidChange state: BMPlayerState) {
+    func bmPlayer(player: BMPlayerLayerView, playerStateDidChange state: BMPlayerState) {
         BMPlayerManager.shared.log("playerStateDidChange - \(state)")
         switch state {
-        case BMPlayerState.ReadyToPlay:
+        case BMPlayerState.readyToPlay:
             if shouldSeekTo != 0 {
                 playerLayer?.seekToTime(Int(shouldSeekTo), completionHandler: {
                     
                 })
                 shouldSeekTo = 0
             }
-        case BMPlayerState.Buffering:
+        case BMPlayerState.buffering:
             cancelAutoFadeOutControlBar()
             controlView.showLoader()
             playStateDidChanged()
-        case BMPlayerState.BufferFinished:
+        case BMPlayerState.bufferFinished:
             controlView.hideLoader()
             playStateDidChanged()
             autoPlay()
-        case BMPlayerState.PlayedToTheEnd:
+        case BMPlayerState.playedToTheEnd:
             self.pause()
             controlView.showPlayToTheEndView()
         default:
@@ -545,7 +544,7 @@ extension BMPlayer: BMPlayerLayerViewDelegate {
         }
     }
     
-    func bmPlayer(player player: BMPlayerLayerView, playTimeDidChange currentTime: NSTimeInterval, totalTime: NSTimeInterval) {
+    func bmPlayer(player: BMPlayerLayerView, playTimeDidChange currentTime: TimeInterval, totalTime: TimeInterval) {
         self.currentPosition = currentTime
         BMPlayerManager.shared.log("playTimeDidChange - \(currentTime) - \(totalTime)")
         totalDuration = totalTime
@@ -560,7 +559,7 @@ extension BMPlayer: BMPlayerLayerViewDelegate {
 }
 
 extension BMPlayer: BMPlayerControlViewDelegate {
-    public func controlViewDidChooseDefition(index: Int) {
+    public func controlViewDidChooseDefition(_ index: Int) {
         shouldSeekTo                = currentPosition
         playerLayer?.resetPlayer()
         playerLayer?.videoURL       = videoItem.resource[index].playURL
