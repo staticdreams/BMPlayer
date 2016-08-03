@@ -23,27 +23,15 @@
 
 #if os(iOS) || os(tvOS)
     import UIKit
+    public typealias ConstraintInterfaceLayoutDirection = UIUserInterfaceLayoutDirection
 #else
     import AppKit
+    public typealias ConstraintInterfaceLayoutDirection = NSUserInterfaceLayoutDirection
 #endif
 
 
-public class LayoutConstraint: NSLayoutConstraint {
+public struct ConstraintConfig {
     
-    internal var constraint: Constraint? = nil
-    public var label: String? = nil
+    public static var interfaceLayoutDirection: ConstraintInterfaceLayoutDirection = .leftToRight
     
-}
-
-internal func ==(lhs: LayoutConstraint, rhs: LayoutConstraint) -> Bool {
-    guard lhs.firstItem === rhs.firstItem &&
-          lhs.secondItem === rhs.secondItem &&
-          lhs.firstAttribute == rhs.firstAttribute &&
-          lhs.secondAttribute == rhs.secondAttribute &&
-          lhs.relation == rhs.relation &&
-          lhs.priority == rhs.priority &&
-          lhs.multiplier == rhs.multiplier else {
-        return false
-    }
-    return true
 }

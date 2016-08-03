@@ -1,30 +1,27 @@
 PODS:
-  - BMPlayer (0.2.7):
-    - NVActivityIndicatorView (~> 2.6)
-    - SnapKit
-  - NVActivityIndicatorView (2.6)
-  - Reveal-iOS-SDK (1.6.2)
-  - SnapKit (0.20.0)
-  - SwipeBack (1.1.0)
+  - BMPlayer (0.2.7)
+  - SnapKit (0.40.0.beta2)
 
 DEPENDENCIES:
   - BMPlayer (from `../`)
-  - NVActivityIndicatorView (~> 2.6)
-  - Reveal-iOS-SDK
-  - SnapKit (~> 0.20.0)
-  - SwipeBack
+  - SnapKit (from `https://github.com/SnapKit/SnapKit.git`, branch `feature/0.40.0`)
 
 EXTERNAL SOURCES:
   BMPlayer:
     :path: ../
+  SnapKit:
+    :branch: feature/0.40.0
+    :git: https://github.com/SnapKit/SnapKit.git
+
+CHECKOUT OPTIONS:
+  SnapKit:
+    :commit: 8fc933a5c2cee28b6d6752a58de94ef7efe37a9c
+    :git: https://github.com/SnapKit/SnapKit.git
 
 SPEC CHECKSUMS:
-  BMPlayer: ea9cf5d3ee408ae58414986b9d4fbe76a734345a
-  NVActivityIndicatorView: b8207b369c012af32da0916a8346a56d16a5fbbe
-  Reveal-iOS-SDK: e2250b3c155bcfac53ae223ddc1f76d08f206c33
-  SnapKit: 5fce3c1bbbf1fbd31de9aa92f33eb9fa03f15650
-  SwipeBack: 45a42c333b7b9657b9f02cf19673339b3a006195
+  BMPlayer: bde2e851bce179a93caf249f680a7c13dea7197a
+  SnapKit: 405236dfbf278b9d545db29f3950ae7e7f14f348
 
-PODFILE CHECKSUM: aee3a67279646801ea71d16096289c5452c12a21
+PODFILE CHECKSUM: 69a500dda645e4562924cff0920c3bb94d374256
 
 COCOAPODS: 1.0.1

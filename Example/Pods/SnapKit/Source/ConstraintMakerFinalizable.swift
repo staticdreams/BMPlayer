@@ -28,22 +28,16 @@
 #endif
 
 
-public class LayoutConstraint: NSLayoutConstraint {
+public class ConstraintMakerFinalizable {
     
-    internal var constraint: Constraint? = nil
-    public var label: String? = nil
+    internal let description: ConstraintDescription
     
-}
-
-internal func ==(lhs: LayoutConstraint, rhs: LayoutConstraint) -> Bool {
-    guard lhs.firstItem === rhs.firstItem &&
-          lhs.secondItem === rhs.secondItem &&
-          lhs.firstAttribute == rhs.firstAttribute &&
-          lhs.secondAttribute == rhs.secondAttribute &&
-          lhs.relation == rhs.relation &&
-          lhs.priority == rhs.priority &&
-          lhs.multiplier == rhs.multiplier else {
-        return false
+    internal init(_ description: ConstraintDescription) {
+        self.description = description
     }
-    return true
+    
+    public var constraint: Constraint {
+        return self.description.constraint!
+    }
+    
 }

@@ -23,27 +23,34 @@
 
 #if os(iOS) || os(tvOS)
     import UIKit
-#else
-    import AppKit
-#endif
 
 
-public class LayoutConstraint: NSLayoutConstraint {
-    
-    internal var constraint: Constraint? = nil
-    public var label: String? = nil
-    
-}
-
-internal func ==(lhs: LayoutConstraint, rhs: LayoutConstraint) -> Bool {
-    guard lhs.firstItem === rhs.firstItem &&
-          lhs.secondItem === rhs.secondItem &&
-          lhs.firstAttribute == rhs.firstAttribute &&
-          lhs.secondAttribute == rhs.secondAttribute &&
-          lhs.relation == rhs.relation &&
-          lhs.priority == rhs.priority &&
-          lhs.multiplier == rhs.multiplier else {
-        return false
+    public extension ConstraintViewController {
+        
+        @available(iOS, deprecated:0.40.0, message:"Please use newer snp.* syntax.")
+        public var topLayoutGuideTop: ConstraintItem {
+            return self.snp.topLayoutGuideTop
+        }
+        
+        @available(iOS, deprecated:0.40.0, message:"Please use newer snp.* syntax.")
+        public var topLayoutGuideBottom: ConstraintItem {
+            return self.snp.topLayoutGuideBottom
+        }
+        
+        @available(iOS, deprecated:0.40.0, message:"Please use newer snp.* syntax.")
+        public var bottomLayoutGuideTop: ConstraintItem {
+            return self.snp.bottomLayoutGuideTop
+        }
+        
+        @available(iOS, deprecated:0.40.0, message:"Please use newer snp.* syntax.")
+        public var bottomLayoutGuideBottom: ConstraintItem {
+            return self.snp.bottomLayoutGuideBottom
+        }
+        
+        public var snp: ConstraintViewControllerDSL {
+            return ConstraintViewControllerDSL(viewController: self)
+        }
+        
     }
-    return true
-}
+
+#endif
