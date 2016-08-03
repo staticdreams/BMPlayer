@@ -1,6 +1,7 @@
 ## BMPlayer
 
-![Swift](https://img.shields.io/badge/Swift-2.2-orange.svg?style=flat)
+![Swift 2.2](https://img.shields.io/badge/Swift-2.2-orange.svg?style=flat)
+![Swift 3.0](https://img.shields.io/badge/Swift-3.0-brightgreen.svg)
 [![Build Status](https://travis-ci.org/BrikerMan/BMPlayer.svg?branch=master)](https://travis-ci.org/BrikerMan/BMPlayer)
 [![Version](https://img.shields.io/cocoapods/v/BMPlayer.svg?style=flat)](http://cocoapods.org/pods/BMPlayer)
 [![License](https://img.shields.io/cocoapods/l/BMPlayer.svg?style=flat)](http://cocoapods.org/pods/BMPlayer)
@@ -27,19 +28,21 @@ A simple video player for iOS, based on AVPlayer, pure swift.
 
 ## Installation
 ### CocoaPods
-
+For swift3, you had to use this podfile.
 ```ruby
-use_frameworks!
+target 'Your Scheme's Name' do
+    use_frameworks!
+    pod 'BMPlayer', :git => 'https://github.com/BrikerMan/BMPlayer.git', :branch => 'swift3'
+    pod 'SnapKit',  :git => 'https://github.com/SnapKit/SnapKit.git',    :branch => 'feature/0.40.0'
+end
 
-pod 'BMPlayer'
-```
-
-**Swift3**
-```ruby
-use_frameworks!
-
-pod 'SnapKit',  :git => 'https://github.com/SnapKit/SnapKit.git', :branch => 'feature/0.40.0'
-pod 'BMPlayer', :git => 'https://github.com/BrikerMan/BMPlayer.git', :branch => 'swift3'
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['SWIFT_VERSION'] = '3.0'
+        end
+    end
+end
 ```
 
 ### Demo
@@ -48,7 +51,6 @@ run `pod install` at `Example` folder before run the demo.
 ## Usage （Support IB and code）
 
 ### Set status bar color
-
 Please add the `View controller-based status bar appearance` field in info.plist and change it to NO
 
 ### IB usage
@@ -74,8 +76,8 @@ view.addSubview(player)
 player.snp_makeConstraints { (make) in
     make.top.equalTo(self.view).offset(20)
     make.left.right.equalTo(self.view)
-        // Note here, the aspect ratio 16:9 priority is lower than 1000 on the line, because the 4S iPhone aspect ratio is not 16:9
-        make.height.equalTo(player.snp_width).multipliedBy(9.0/16.0).priority(750)
+    // Note here, the aspect ratio 16:9 priority is lower than 1000 on the line, because the 4S iPhone aspect ratio is not 16:9
+    make.height.equalTo(player.snp_width).multipliedBy(9.0/16.0).priority(750)
 }
 // Back button event
 player.backBlock = { [unowned self] in
@@ -95,9 +97,9 @@ player.playWithURL(NSURL(string: "http://baobab.wdjcdn.com/14571455324031.mp4")!
 let resource0 = BMPlayerItemDefinitionItem(url: NSURL(string: "http://baobab.wdjcdn.com/14570071502774.mp4")!, definitionName: "HD")
 let resource1 = BMPlayerItemDefinitionItem(url: NSURL(string: "http://baobab.wdjcdn.com/1457007294968_5824_854x480.mp4")!, definitionName: "SD")
 
-let item    = BMPlayerItem(title: "周末号外丨川普版权力的游戏",
-resource: [resource0, resource1],
-cover: "http://img.wdjimg.com/image/video/acdba01e52efe8082d7c33556cf61549_0_0.jpeg")
+let item = BMPlayerItem(title: "周末号外丨川普版权力的游戏",
+                        resource: [resource0, resource1],
+                        cover: "http://img.wdjimg.com/image/video/acdba01e52efe8082d7c33556cf61549_0_0.jpeg")
 ```
 
 ## Customize player
@@ -136,5 +138,4 @@ This project heavily reference the Objective-C version of this project [ZFPlayer
 
 ## License
 BMPlayer is available under the MIT license. See the LICENSE file for more info.
-
 
