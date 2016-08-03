@@ -31,7 +31,15 @@ A simple video player for iOS, based on AVPlayer, pure swift.
 ```ruby
 use_frameworks!
 
-pod 'BMPlayer', '~> 0.2.0'
+pod 'BMPlayer'
+```
+
+**Swift3**
+```ruby
+use_frameworks!
+
+pod 'SnapKit',  :git => 'https://github.com/SnapKit/SnapKit.git', :branch => 'feature/0.40.0'
+pod 'BMPlayer', :git => 'https://github.com/BrikerMan/BMPlayer.git', :branch => 'swift3'
 ```
 
 ### Demo
@@ -128,3 +136,5 @@ This project heavily reference the Objective-C version of this project [ZFPlayer
 
 ## License
 BMPlayer is available under the MIT license. See the LICENSE file for more info.
+
+

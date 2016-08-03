@@ -2,7 +2,6 @@ source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
 def swift3_overrides
-    
     pod 'SnapKit',  :git => 'https://github.com/SnapKit/SnapKit.git',       :branch => 'feature/0.40.0'
 end
 
@@ -10,10 +9,6 @@ target 'BMPlayer_Example' do
     swift3_overrides
     pod 'BMPlayer', :path => '../'
 end
-
-
-
-
 
 
 post_install do |installer|
