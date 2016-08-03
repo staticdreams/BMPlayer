@@ -446,7 +446,7 @@ class BMPlayerControlView: UIView, BMPlayerCustomControlView {
         }
         
         seekToView.snp_makeConstraints { (make) in
-            make.centerX.centerY.equalTo(self.snp_center)
+            make.centerX.centerY.equalTo(self)
             make.width.equalTo(100)
             make.height.equalTo(40)
         }
