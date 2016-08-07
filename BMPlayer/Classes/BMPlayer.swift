@@ -205,6 +205,13 @@ public class BMPlayer: UIView {
     
     // MARK: - Action Response
     private func playStateDidChanged() {
+		
+		if shouldForceLandscape {
+			UIDevice.currentDevice().setValue(UIInterfaceOrientation.LandscapeRight.rawValue, forKey: "orientation")
+			UIApplication.sharedApplication().setStatusBarHidden(false, withAnimation: UIStatusBarAnimation.Fade)
+			UIApplication.sharedApplication().setStatusBarOrientation(UIInterfaceOrientation.LandscapeRight, animated: false)
+		}
+		
         if isSliderSliding { return }
         if let player = playerLayer {
             if player.isPlaying {
@@ -526,12 +533,6 @@ public class BMPlayer: UIView {
         }
         playerLayer!.delegate = self
         controlView.showLoader()
-		
-		if shouldForceLandscape {
-			UIDevice.currentDevice().setValue(UIInterfaceOrientation.LandscapeRight.rawValue, forKey: "orientation")
-			UIApplication.sharedApplication().setStatusBarHidden(false, withAnimation: UIStatusBarAnimation.Fade)
-			UIApplication.sharedApplication().setStatusBarOrientation(UIInterfaceOrientation.LandscapeRight, animated: false)
-		}
 		
         self.layoutIfNeeded()
     }
