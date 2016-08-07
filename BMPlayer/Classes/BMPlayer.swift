@@ -33,6 +33,8 @@ enum BMPlayerItemType {
 public class BMPlayer: UIView {
 
     public var backBlock:(() -> Void)?
+	
+	public var shouldCompletelyDismissView = false
     
     var videoItem: BMPlayerItem!
     
@@ -352,7 +354,7 @@ public class BMPlayer: UIView {
     }
     
     @objc private func backButtonPressed(button: UIButton) {
-        if isFullScreen {
+        if isFullScreen && !shouldCompletelyDismissView {
             fullScreenButtonPressed(nil)
         } else {
             playerLayer?.prepareToDeinit()
