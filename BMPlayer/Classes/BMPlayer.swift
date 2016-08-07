@@ -34,7 +34,9 @@ public class BMPlayer: UIView {
 
     public var backBlock:(() -> Void)?
 	
-	public var shouldCompletelyDismissView = false
+	public var shouldCompletelyDismissView = false // Handy when using player in a separate popover controller
+	
+	public var shouldForceLandscape = false // Starting watching in landscape mode
     
     var videoItem: BMPlayerItem!
     
@@ -524,6 +526,13 @@ public class BMPlayer: UIView {
         }
         playerLayer!.delegate = self
         controlView.showLoader()
+		
+		if shouldForceLandscape {
+			UIDevice.currentDevice().setValue(UIInterfaceOrientation.LandscapeRight.rawValue, forKey: "orientation")
+			UIApplication.sharedApplication().setStatusBarHidden(false, withAnimation: UIStatusBarAnimation.Fade)
+			UIApplication.sharedApplication().setStatusBarOrientation(UIInterfaceOrientation.LandscapeRight, animated: false)
+		}
+		
         self.layoutIfNeeded()
     }
 }
